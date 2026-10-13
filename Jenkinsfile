@@ -6,15 +6,15 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building application...'
-                bat 'python --version'
-                bat 'python -m py_compile app.py'
+                bat '"C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python315\\python.exe" --version'
+                bat '"C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python315\\python.exe" -m py_compile app.py'
             }
         }
 
         stage('Test') {
             steps {
                 echo 'Running tests...'
-                bat 'python test_app.py'
+                bat '"C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python315\\python.exe" test_app.py'
             }
         }
 
